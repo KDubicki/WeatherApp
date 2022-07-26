@@ -1,34 +1,34 @@
-const CurrentWeather = () => {
+const CurrentWeather = ({data}) => {
     return (
         <div>
             <div>
                 <div>
-                    <p>London</p>
-                    <p>Snowy</p>
+                    <p>{data.city}</p>
+                    <p>{data.weather[0].description}</p>
                 </div>
                 {/*<img alt="weather" src="" />*/}
             </div>
            <div>
-               <p>18C</p>
+               <p>{Math.round(data.main.temp)}°C</p>
                <div>
                    <div>
                        <span>Details</span>
                    </div>
                    <div>
-                       <span>Feels like</span>
-                       <span>22</span>
+                       <span>Feels like </span>
+                       <span>{Math.round(data.main.feels_like)}°C</span>
                    </div>
                    <div>
-                       <span>Wind</span>
-                       <span>2 m/s</span>
+                       <span>Wind </span>
+                       <span>{data.wind.speed} m/s</span>
                    </div>
                    <div>
-                       <span>Humidity</span>
-                       <span>2%</span>
+                       <span>Humidity </span>
+                       <span>{data.main.humidity}%</span>
                    </div>
                    <div>
-                       <span>Pressure</span>
-                       <span>15 hPa</span>
+                       <span>Pressure </span>
+                       <span>{data.main.pressure} hPa</span>
                    </div>
                </div>
            </div>
