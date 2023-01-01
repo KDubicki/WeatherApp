@@ -1,15 +1,19 @@
+import './current-wheater.css'
+
 const CurrentWeather = ({data}) => {
     return (
-        <div>
+        <div className="current-weather">
+            <div className="temperature">{Math.round(data.main.temp)}°C</div>
+
+
             <div>
                 <div>
-                    <p>{data.city}</p>
+                    <h2>{data.city}</h2>
                     <p>{data.weather[0].description}</p>
                 </div>
                 {/*<img alt="weather" src="" />*/}
             </div>
            <div>
-               <p>{Math.round(data.main.temp)}°C</p>
                <div>
                    <div>
                        <span>Details</span>
