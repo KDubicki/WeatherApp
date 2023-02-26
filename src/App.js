@@ -32,7 +32,8 @@ function App() {
     };
 
     return (
-        <div className={`container ${currentWeather?.weather[0].icon.slice(-1)}`}>
+        <div className="container">
+            <h1 className="title">Weather</h1>
             <Search
                 onSearchChange={handleOnSearchChange}
             />

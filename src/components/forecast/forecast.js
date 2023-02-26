@@ -1,5 +1,5 @@
 const forecast = () => {
-    return 'hello';
+    return '';
 }
 
 export default forecast;

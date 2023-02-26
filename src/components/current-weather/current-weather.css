@@ -1,0 +1,13 @@
+.current-weather {
+    width: 80vw;
+    min-height: 50px;
+
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+
+    background: linear-gradient(90deg, rgba(24,94,56,1) 0%, rgba(34,124,87,1) 100%);
+    border: 0.15rem solid #468964;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
