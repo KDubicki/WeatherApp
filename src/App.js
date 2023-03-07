@@ -32,13 +32,11 @@ function App() {
     };
 
     return (
-        <div className="container">
-            <h1 className="title">Weather</h1>
-            <Search
-                onSearchChange={handleOnSearchChange}
-            />
+        <div className="weather">
+            <h1 className="weather__title">Weather</h1>
+            <Search onSearchChange={handleOnSearchChange}/>
             {currentWeather && <CurrentWeather data={currentWeather}/>}
-            {forecast && <Forecast />}
+            {forecast && <Forecast data={forecast} />}
         </div>
     );
 }
